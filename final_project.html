@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Project</title>
+
+
+<script src="http://cloud.github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+
+<script src="userinput.js"></script>
+<link rel = "stylesheet" type="text/css" href = "final_project.css">
+</head>
+<body>
+  <div align="middle" >
+  <img id="logo"  src="logotrans.png" alt="ourlogo">
+  </div>
+  <div id="canvas-container">
+  <canvas id="canvas" data-processing-sources="final_project.js"></canvas>
+  </div>
+  <button id="refresh" class="btn" onclick= "restartMe()">Restart game</button>
+  <!-- <button onclick="showCanvas()">Show canvas</button>
+  <button onclick="setBallLine((0))">change</button> -->
+  <!-- <input type="text" id="stuff" onchange="handleChange()"><br> -->
+
+
+
+
+  <table>
+  <tr>
+  <td>
+  <div id="form">
+  <form action="" method="GET">
+    <div id ="sentence_one">
+      <span class="function"> setup </span> {
+    </div>
+    <div id ="sentence_two">
+      <span class="comment">//setting up the ball </span><br>
+      <span class="function">outline </span> <input type="text" id="ball_outline">; <br>
+      <span class="function">fill </span><input type="text" id ="ballcolor">; <br>
+      <span class="variable">ball_size </span><span class="function">=</span> <input type="text" id ="ballsize">; <br>
+    </div>
+    <div id = "sentence_three">
+      <span class="comment">//setting up paddle </span> <br>
+      <span class="function"> outline</span> <input type="text"id="paddle_outline">; <br>
+      <span class="function"> fill </span> <input type="text" id ="paddlecolor">; <br>
+      <span class="variable">paddle_size</span><span class="function"> = </span><span class="integer">150</span>; <br>
+    </div>
+    <div id = "sentence_four">
+      <span class="variable">points</span> <span class="function">=</span> <span class="integer">0</span>; <br> }
+    </div>
+    <div id = "sentence_five">
+        <br> <span class="function">Loop </span>{
+    </div>
+
+    <div id= "sentence_six">
+      <span class="variable">background</span> <span class="function">=</span> <input type="text" id="background">;
+    </div>
+    <div id="sentence_seven">
+    <span class="comment">//paddle movement</span> <br>
+    <span class="variable">paddle x coordinate</span>
+    <span class="function">=</span>
+    <span class="variable">mouse x coordinate</span>; <br>
+    <span class="variable">paddle y coordinate</span>
+    <span class="function">=</span>
+     <span class="integer">450</span>; <br>
+    </div>
+    <div id="sentence_eight">
+      <span class="function"> circle</span>(<span class="variable">ball_x, ball_y, ball_size</span>); <br>
+      <span class="function"> rectangle</span>(<span class ="variable">rectanglex, rectangley, size</span>);
+    </div>
+    <div id="sentence_nine">
+       <span class="comment">//Ball movement</span> <br>
+       <span class="function">keep Ball moving foward</span>;
+    </div>
+    <div id ="sentence_ten">
+      <span class="conditional">if </span>
+      (ball touches wall){ <br>
+      <span class="function">change direction of the ball</span>; <br> } <br>
+     <span class="conditional">if </span>
+      (ball touches paddle) { <br>
+     <span class="function">change direction of the ball</span>; <br>
+     <span class="variable">points </span> = <span class="variable"> points </span> <span class="function">+ </span> <span class="integer">1 </span> <br> } <br>
+   </div>
+   <div id="sentence_eleven">
+     <span class="conditional">if </span>
+      (ball goes lower than paddle) { <br>
+     <span class="function">set background to gameover page </span>;<br>
+     <span class="function">end loop </span>;<br> }<br> } <br>
+   </div>
+  <br>
+  <button type="button" id="btn" class="btn" onclick="next_line()" >Start Coding</button>
+  </div>
+  </td>
+  <td>
+  <div id="explanation_box"> </div>
+  </td>
+  </tr>
+  </table>
+</body>
+</html>

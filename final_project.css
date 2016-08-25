@@ -1,0 +1,102 @@
+/*mint = (102,255,153)
+purple = (213, 128, 255)
+blue = (128, 159, 255)
+lightblue = (204, 255, 255)*/
+#canvas-container {
+   width: 100%;
+   text-align:center;
+   display:none;
+}
+
+#logo {
+  height: 150px;
+  margin-top: -40px;
+}
+#canvas{
+  display:inline;
+}
+#sentence_one {
+display: none;
+}
+#sentence_two {
+  display: none;
+}
+#sentence_three {
+display: none;
+}
+#sentence_four {
+  display: none;
+}
+#sentence_five {
+  display: none;
+}
+#sentence_six {
+display: none;
+}
+#sentence_seven {
+  display: none;
+}
+#sentence_eight {
+display: none;
+}
+#sentence_nine {
+  display: none;
+}
+#sentence_ten {
+  display: none;
+}
+#sentence_eleven {
+  display: none;
+}
+
+#explanation_box {
+  position:absolute;
+  right: 100px;
+  width: 400px;
+  border: none;
+  padding: 20px;
+  color: white;
+}
+
+#form {
+  padding: 20px;
+  left: 70px;
+}
+
+.btn {
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+#refresh {
+  display: none;
+}
+
+.function {
+  color:#00CED1;
+}
+
+.comment {
+  color:  #686868;
+}
+.variable {
+  color: #9932CC;
+}
+.conditional {
+  color: #FF9900;
+}
+.integer {
+  color: #33FF66;
+}
+
+body {
+  background-color: #383838;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bolder;
+}
