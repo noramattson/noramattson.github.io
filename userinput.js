@@ -94,6 +94,7 @@ function showCanvas(){
         setBallLine(255, 77, 148)
       }
       else {
+        console.log(ball_outline)
         alert("invalid outline color! try again")
         clicked = 2
         x = true
