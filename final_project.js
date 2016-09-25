@@ -131,15 +131,15 @@ background(backgroundCol);
     background(102,255,153);
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
+    var imageObj = new Image();
     var pointsText ="final points:"+points
+    imageObj.src = 'gameover.png';
+    context.drawImage(imageObj, (width-400)/2, 100);
     fill(100)
     rect((width-textWidth(pointsText)+20)/2-10,300, textWidth(pointsText)+20, 40);
     fill(255)
     textFont("Ariel",34)
     text(pointsText,(width-textWidth(pointsText)+20)/2,330);
-    var imageObj = new Image();
-    imageObj.src = 'gameover.png';
-    context.drawImage(imageObj, (width-400)/2, 100);
     noLoop();
    }
 
